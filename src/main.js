@@ -16,6 +16,13 @@ import router from './lib/router'
 import myBreadcrumb from './components/myBreadcrumb.vue';
 Vue.component('myBreadcrumb',myBreadcrumb);
 
+// 导入时间插件monment.js
+import moment from 'moment';
+
+Vue.filter('beautifulTime',(value)=>{
+ return moment(value).format('YYYY年MM月DD日 hh:mm:ss');
+})
+
 new Vue({
   el: '#app',
   router,

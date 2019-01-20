@@ -47,8 +47,9 @@ methods: {
               console.log(res)
               if(res.data.meta.status===400){
               }else if(res.data.meta.status===200){
-                this.$router.push('/');
                 window.sessionStorage.setItem('token',res.data.data.token)
+                this.$router.push('/');
+                
               }
             })
           } else {

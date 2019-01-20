@@ -7,6 +7,12 @@ import user from '../components/user.vue'
 
 import login from "../components/login.vue";
 import main from "../components/main.vue";
+import roles from "../components/roles.vue";
+import rights from "../components/rights.vue";
+import goods from "../components/goods.vue";
+import params from "../components/params.vue";
+import reports from "../components/reports.vue";
+import categories from "../components/categories.vue";
 const routes = [
   {
     path: "/login",
@@ -19,6 +25,30 @@ const routes = [
       {
         path:'users',
         component:user
+      },
+      {
+        path:'roles',
+        component:roles
+      },
+      {
+        path:'rights',
+        component:rights
+      },
+      {
+        path:'goods',
+        component:goods
+      },
+      {
+        path:'params',
+        component:params
+      },
+      {
+        path:'reports',
+        component:reports
+      },
+      {
+        path:'categories',
+        component:categories
       }
     ]
   }
